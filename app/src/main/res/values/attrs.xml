@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SpringIndicator">
+
+        <!--tab text color -->
+        <attr name="siTextColor" format="reference"/>
+
+        <!--tab text color which is selected-->
+        <attr name="siSelectedTextColor" format="reference"/>
+
+        <!--tab item bg -->
+        <attr name="siTextBg" format="reference"/>
+
+        <!--tab text size-->
+        <attr name="siTextSize" format="dimension"/>
+
+        <!--indicator bg color-->
+        <attr name="siIndicatorColor" format="reference"/>
+
+        <!--indicator bg colors. should equals your titles count-->
+        <attr name="siIndicatorColors" format="reference"/>
+
+        <!--max indicator radius-->
+        <attr name="siRadiusMax" format="dimension"/>
+
+        <!--min indicator radius when moving-->
+        <attr name="siRadiusMin" format="dimension"/>
+
+    </declare-styleable>
+
+    <attr format="string" name="fontPath"/>
+    <item name="calligraphy_tag_id" type="id"/>
+
+</resources>

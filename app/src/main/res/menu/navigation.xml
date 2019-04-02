@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/nav_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_events"
+        android:icon="@drawable/nav_score"
+        android:title="@string/title_events" />
+
+    <item
+        android:id="@+id/navigation_sports"
+        android:icon="@drawable/nav_offers"
+        android:title="@string/title_offers" />
+
+    <item
+        android:id="@+id/navigation_offers"
+        android:icon="@drawable/nav_schedule"
+        android:title="@string/title_schedule" />
+
+    <item
+        android:id="@+id/navigation_leaderboard"
+        android:icon="@drawable/nav_leader"
+        android:title="@string/title_leaderboard" />
+
+</menu>

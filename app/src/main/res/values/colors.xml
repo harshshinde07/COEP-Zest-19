@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorPrimaryLight">#484848</color>
+    <color name="colorAccent">#000000</color>
+    <color name="accent">#607D8B</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_light">#99444444</color>
+    <color name="gray_dark">#616161</color>
+    <color name="gray_light">#9e9e9e</color>
+    <color name="brown">#5d4037</color>
+    <color name="transparent">#00000000</color>
+
+
+
+    <color name="indicator_1">#55B3C2</color>
+    <color name="indicator_2">#64A4A4</color>
+    <color name="indicator_3">#66D7B9</color>
+    <color name="indicator_4">#FDBC7D</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="fragment_1">#006064</color>
+    <color name="fragment_2">#7b1fa2</color>
+    <color name="fragment_3">#c2185b</color>
+    <color name="fragment_4">#303f9f</color>
+
+    <color name="greyPrimary">#DE000000</color>
+    <color name="greySecondary">#8B000000</color>
+    <color name="greyDisabled">#61000000</color>
+
+    <color name="guillotine_background">#444153</color>
+    <color name="guillotine_background_dark">#383547</color>
+    <color name="selected_item_color">#30d1d5</color>
+
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#DE000000</color>
+    <color name="bg_screen2">#DE000000</color>
+    <color name="bg_screen3">#DE000000</color>
+    <color name="bg_screen4">#DE000000</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#444153</color>
+    <color name="dot_dark_screen2">#444153</color>
+    <color name="dot_dark_screen3">#444153</color>
+    <color name="dot_dark_screen4">#444153</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#30d1d5</color>
+    <color name="dot_light_screen2">#30d1d5</color>
+    <color name="dot_light_screen3">#30d1d5</color>
+    <color name="dot_light_screen4">#30d1d5</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+</resources>

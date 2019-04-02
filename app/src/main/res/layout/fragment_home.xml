@@ -1,0 +1,235 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eee"
+    tools:context=".fragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center_vertical"
+            android:visibility="visible"
+            app:indicatorColor="@color/colorPrimaryDark"
+            app:indicatorName="BallPulseIndicator" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/focused_match"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <com.rd.PageIndicatorView
+                    android:id="@+id/indicator"
+                    android:paddingTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:piv_animationType="fill"
+                    app:piv_dynamicCount="true"
+                    app:piv_interactiveAnimation="true"
+                    app:piv_selectedColor="@color/colorAccent"
+                    app:piv_unselectedColor="@color/colorPrimary"
+                    app:piv_viewPager="@id/pager" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textViewSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:text="@string/special_events" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/c1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="4dp"
+                    android:padding="4dp"
+                    app:cardCornerRadius="4dp"
+                    android:transitionName="@string/simple_fragment_transition">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp">
+
+                        <ImageView
+                            android:id="@+id/image1"
+                            android:layout_width="240dp"
+                            android:layout_height="120dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="start"
+                            android:layout_marginEnd="143dp"
+                            android:src="@drawable/wheel"
+                            android:transitionName="@string/simple_fragment_transition" />
+
+
+                        <TextView
+                            android:id="@+id/textViewName1"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:text="@string/name1"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewDate1"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textViewName1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="23dp"
+                            android:text="@string/date1"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewTime1"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textViewDate1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="23dp"
+                            android:text="@string/time1"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/c3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="4dp"
+                    android:padding="4dp"
+                    app:cardCornerRadius="4dp"
+                    android:transitionName="@string/simple_fragment_transition">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+
+                        <TextView
+                            android:id="@+id/textViewName2"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:text="@string/name2"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewDate2"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textViewName2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="23dp"
+                            android:text="@string/date2"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewTime2"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textViewDate2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="23dp"
+                            android:text="@string/time2"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:layout_width="240dp"
+                            android:layout_height="120dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="143dp"
+                            android:src="@drawable/bmx"
+                            android:transitionName="@string/simple_fragment_transition"/>
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
