@@ -17,4 +17,8 @@
         android:id="@+id/rate"
         android:title="Rate"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/privacy"
+        android:title="Privacy Policy"
+        app:showAsAction="never" />
 </menu>

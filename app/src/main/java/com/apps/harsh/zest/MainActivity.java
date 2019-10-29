@@ -139,6 +139,15 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.OnFr
         else if (id == R.id.web) {
             startActivity(new Intent(MainActivity.this, WebFragment.class));
         }
+        else if (id == R.id.privacy) {
+            Uri uri = Uri.parse("https://harshshinde07.github.io/Zest-19-Privacy-Policy/");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            if (intent.resolveActivity(getPackageManager()) != null) {
+                startActivity(intent);
+            } else {
+                Toast.makeText(this, "Web browser not found!", Toast.LENGTH_LONG).show();
+            }
+        }
         return super.onOptionsItemSelected(item);
     }
 }
