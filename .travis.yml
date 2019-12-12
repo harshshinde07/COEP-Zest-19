@@ -7,6 +7,7 @@ android:
     - platform-tools
     - build-tools-28.0.3
     - android-28
+    - android 21
     - sys-img-armeabi-v7a-android-21
 before_script:
   - echo no | android create avd --force -n test -t android-21 --abi armeabi-v7a
@@ -28,4 +29,5 @@ cache:
     - $HOME/.android/build-cache
 branches:
   only:
-    - master    
+    - master
+    - development
